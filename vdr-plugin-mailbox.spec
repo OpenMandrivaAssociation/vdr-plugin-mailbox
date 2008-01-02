@@ -12,6 +12,7 @@ Group:		Video
 License:	GPL
 URL:		http://sites.inka.de/~W1222/vdr/
 Source:		http://sites.inka.de/~W1222/vdr/download/vdr-%plugin-%version.tar.bz2
+BuildRoot:	%{_tmppath}/%{name}-buildroot
 BuildRequires:	vdr-devel >= 1.4.1-6
 BuildRequires:	imap-devel
 BuildRequires:	pam-devel
