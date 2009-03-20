@@ -2,7 +2,7 @@
 %define plugin	mailbox
 %define name	vdr-plugin-%plugin
 %define version	0.5.0
-%define rel	2
+%define rel	3
 
 Summary:	VDR plugin: Display emails of IMAP/POP3 accounts
 Name:		%name
