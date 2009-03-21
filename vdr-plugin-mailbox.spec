@@ -14,7 +14,7 @@ URL:		http://sites.inka.de/~W1222/vdr/
 Source:		http://sites.inka.de/~W1222/vdr/download/vdr-%plugin-%version.tgz
 BuildRoot:	%{_tmppath}/%{name}-buildroot
 BuildRequires:	vdr-devel >= 1.6.0
-BuildRequires:	imap-devel
+BuildRequires:	c-client-devel
 BuildRequires:	pam-devel
 BuildRequires:	openssl-devel
 Requires:	vdr-abi = %vdr_abi
