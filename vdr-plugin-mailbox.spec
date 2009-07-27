@@ -13,7 +13,7 @@ License:	GPL
 URL:		http://sites.inka.de/~W1222/vdr/
 Source:		http://sites.inka.de/~W1222/vdr/download/vdr-%plugin-%version.tgz
 BuildRoot:	%{_tmppath}/%{name}-buildroot
-BuildRequires:	vdr-devel >= 1.6.0
+BuildRequires:	vdr-devel >= 1.6.0-7
 BuildRequires:	c-client-devel
 BuildRequires:	pam-devel
 BuildRequires:	openssl-devel
@@ -45,7 +45,7 @@ param="-m MAILCMD"
 
 %build
 # fixes build
-VDR_PLUGIN_FLAGS="%vdr_plugin_flags -fno-operator-names"
+VDR_PLUGIN_EXTRA_FLAGS="-fno-operator-names"
 %vdr_plugin_build
 
 %install
