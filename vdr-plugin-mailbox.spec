@@ -2,7 +2,7 @@
 %define plugin	mailbox
 %define name	vdr-plugin-%plugin
 %define version	0.5.0
-%define rel	4
+%define rel	5
 
 Summary:	VDR plugin: Display emails of IMAP/POP3 accounts
 Name:		%name
@@ -12,6 +12,7 @@ Group:		Video
 License:	GPL
 URL:		http://sites.inka.de/~W1222/vdr/
 Source:		http://sites.inka.de/~W1222/vdr/download/vdr-%plugin-%version.tgz
+Patch0:		mailbox-graphtft-mailcount.patch
 BuildRoot:	%{_tmppath}/%{name}-buildroot
 BuildRequires:	vdr-devel >= 1.6.0-7
 BuildRequires:	c-client-devel
@@ -35,6 +36,7 @@ available when working with IMAP accounts.
 
 %prep
 %setup -q -n %plugin-%version
+%patch0 -p0
 %vdr_plugin_prep
 
 %vdr_plugin_params_begin %plugin
