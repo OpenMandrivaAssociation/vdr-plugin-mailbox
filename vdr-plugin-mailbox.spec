@@ -10,7 +10,7 @@ Version:	%version
 Release:	%mkrel %rel
 Group:		Video
 License:	GPL
-URL:		http://sites.inka.de/~W1222/vdr/
+URL:		https://sites.inka.de/~W1222/vdr/
 Source:		http://sites.inka.de/~W1222/vdr/download/vdr-%plugin-%version.tgz
 Patch0:		mailbox-graphtft-mailcount.patch
 BuildRoot:	%{_tmppath}/%{name}-buildroot
